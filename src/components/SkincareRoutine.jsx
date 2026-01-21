@@ -41,7 +41,8 @@ function SkincareRoutine() {
       discount: 10,
       variant: "cart",
       size: "small",
-      stockStatus: "out-of-stock"
+      stockStatus: "out-of-stock",
+      isWishlisted: true
     },
     { 
       id: 4,
@@ -91,6 +92,7 @@ function SkincareRoutine() {
             size={product.size}
             stockCount={product.stockCount}
             stockStatus={product.stockStatus}
+            isWishlisted={product.isWishlisted}
           />
         ))}
       </div>

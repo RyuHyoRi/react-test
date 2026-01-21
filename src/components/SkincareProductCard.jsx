@@ -14,7 +14,8 @@ function SkincareProductCard({
     variant = "cart",
     size = "medium",
     stockCount,
-    stockStatus
+    stockStatus,
+    isWishlisted
 }) {
   const stepLabels = {
     1: { name: "Toner", icon: "💧" },
@@ -63,6 +64,11 @@ function SkincareProductCard({
           stockStatus={stockStatus}
           onClick={() => onAddToCart({ brand, name, price: finalPrice })}
           stockCount={stockCount}
+        />
+        <ProductActionButton
+            variant="wishlist"
+            isWishlisted={isWishlisted}
+            onClick={() => alert(`Added ${brand} - ${name} to wishlist!`)}
         />
       </div>
     </div>
