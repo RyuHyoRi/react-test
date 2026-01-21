@@ -1,0 +1,35 @@
+.routine-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.skincare-card {
+    background-color: #f8b3bc;
+    padding: 16px;
+    border-radius: 8px;
+}
+.product-action-button-container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.product-action-button {
+    margin-top: 12px;
+    background-color: white;
+    color: #333;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+.product-action-button.small {
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+.product-action-button.large {
+    font-size: 18px;
+    padding: 10px 14px;
+    font-size: 18px;
+}

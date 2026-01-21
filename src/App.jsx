@@ -1,22 +1,12 @@
-import { useState } from 'react'
-import './App.css'
-import ProductPreviewCard from './components/ProductPreviewCard.jsx'
-import GlobalShippingCard from './components/GlobalShippingCard.jsx'
-import SkincareRoutine from './components/SkincareRoutine.jsx'
-import ProductActionButton from './components/ProductActionButton.jsx'
+import { Routes, Route, Navigate } from "react-router-dom";
+import Home from "./pages/Home.jsx";
+import Skincare from "./pages/Skincare.jsx";
 
-function App() {
-  const handleAddToCart = () => {
-    alert("Product added to cart!");
-  };
-
+export default function App() {
   return (
-    <>
-      <ProductPreviewCard />
-      <GlobalShippingCard />
-      <SkincareRoutine />
-    </>
-  )
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/skincare" element={<Skincare />} />
+    </Routes>
+  );
 }
-
-export default App

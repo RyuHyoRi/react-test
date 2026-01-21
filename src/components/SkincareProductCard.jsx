@@ -62,6 +62,7 @@ function SkincareProductCard({
           size={size}
           stockStatus={stockStatus}
           onClick={() => onAddToCart({ brand, name, price: finalPrice })}
+          stockCount={stockCount}
         />
       </div>
     </div>

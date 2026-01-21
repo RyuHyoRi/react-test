@@ -17,20 +17,18 @@ function ProductActionButton({
     };
 
     return (
-        <>
+        <div className="product-action-button-container">
             <button
                 className={`product-action-button ${variant} ${size}`}
-                disabled={disabled || loading}
+                disabled={stockStatus === "out-of-stock" || disabled}
                 onClick={onClick}
             >
                 {getButtonLabel()}
             </button>
             <label className="stock-status">
-                {stockStatus === "in-stock" && "In Stock"}
                 {stockStatus === "low-stock" && `Only ${stockCount} left!`}
-                {stockStatus === "out-of-stock" && "Out of Stock"}
             </label>
-        </>
+        </div>
     );
 }
 

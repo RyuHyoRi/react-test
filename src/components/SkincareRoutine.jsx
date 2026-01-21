@@ -1,4 +1,5 @@
 import SkincareProductCard from '../components/SkincareProductCard';
+import './SkincareRoutine.css';
 
 function SkincareRoutine() {
   const routineProducts = [
@@ -37,7 +38,10 @@ function SkincareRoutine() {
       volume: "30ml",
       skinTypes: ["Dull", "Dry"],
       imageUrl: "https://via.placeholder.com/200",
-      discount: 10
+      discount: 10,
+      variant: "cart",
+      size: "small",
+      stockStatus: "out-of-stock"
     },
     { 
       id: 4,
@@ -48,7 +52,8 @@ function SkincareRoutine() {
       volume: "75ml",
       skinTypes: ["Sensitive", "Acne-Prone"],
       imageUrl: "https://via.placeholder.com/200",
-      discount: 0
+      discount: 0,
+      size: "large",
     },
   ];
   
