@@ -54,6 +54,7 @@ function SkincareRoutine() {
       skinTypes: ["Sensitive", "Acne-Prone"],
       imageUrl: "https://via.placeholder.com/200",
       discount: 0,
+      variant: "buy-now",
       size: "large",
     },
   ];

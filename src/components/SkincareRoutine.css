@@ -23,6 +23,10 @@
     padding: 8px 12px;
     border-radius: 4px;
 }
+.product-action-button.buy-now {
+    background-color: #3a3a3ad5;
+    color: rgb(173, 172, 172);
+}
 .product-action-button.small {
     padding: 5px 10px;
     font-size: 14px;
