@@ -1,0 +1,14 @@
+.brand-card {
+    background-color: #fc98da;
+    padding: 16px;
+    border-radius: 8px;
+}
+.brand-header {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.best-seller-badge {
+    margin-left: 6px;
+}
