@@ -37,3 +37,15 @@
     padding: 10px 14px;
     font-size: 18px;
 }
+.product-status-alert {
+    position: absolute;
+    width: 300px;
+    padding: 10px;
+    border-radius: 4px;
+}
+.alert-dismiss {
+    float: right;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 0 5px;
+}

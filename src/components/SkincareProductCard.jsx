@@ -1,4 +1,5 @@
 import ProductActionButton from "./ProductActionButton";
+import ProductStatusAlert from "./ProductStatusAlert";
 
 function SkincareProductCard({ 
     brand,
@@ -15,7 +16,11 @@ function SkincareProductCard({
     size = "medium",
     stockCount,
     stockStatus,
-    isWishlisted
+    isWishlisted,
+    type,
+    dismissible,
+    countryCode,
+    expiresAt
 }) {
   const stepLabels = {
     1: { name: "Toner", icon: "💧" },
@@ -29,6 +34,7 @@ function SkincareProductCard({
   const stepInfo = stepLabels[step] || { name: "Other", icon: "📦" };
   
   return (
+    <>
     <div className={`skincare-card ${!inStock ? 'out-of-stock' : ''}`}>
       <div className="step-badge">
         <span className="step-icon">{stepInfo.icon}</span>
@@ -71,7 +77,16 @@ function SkincareProductCard({
             onClick={() => alert(`Added ${brand} - ${name} to wishlist!`)}
         />
       </div>
+      <ProductStatusAlert
+        type={type}
+        dismissible={dismissible}
+        stockCount={stockCount}
+        countryCode={countryCode}
+        expiresAt={expiresAt}
+      >
+      </ProductStatusAlert>
     </div>
+    </>
   );
 }
 

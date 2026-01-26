@@ -12,7 +12,9 @@ function SkincareRoutine() {
       volume: "150ml",
       skinTypes: ["Oily", "Combination"],
       imageUrl: "https://via.placeholder.com/200",
-      discount: 15
+      discount: 15,
+      type: "sale",
+      dismissible: true,
     },
     { 
       id: 2,
@@ -27,7 +29,9 @@ function SkincareRoutine() {
       variant: "cart",
       size: "medium",
       stockCount: 5,
-      stockStatus: "low-stock"
+      stockStatus: "low-stock",
+      type: "low-stock",
+      dismissible: false,
     },
     { 
       id: 3,
@@ -42,7 +46,9 @@ function SkincareRoutine() {
       variant: "cart",
       size: "small",
       stockStatus: "out-of-stock",
-      isWishlisted: true
+      isWishlisted: true,
+      type: "out-of-stock",
+      dismissible: true,
     },
     { 
       id: 4,
@@ -56,6 +62,40 @@ function SkincareRoutine() {
       discount: 0,
       variant: "buy-now",
       size: "large",
+      type: "preorder",
+      dismissible: true,
+      expiresAt: new Date("2024-02-15T00:00:00"),
+    },
+        { 
+      id: 5,
+      brand: "Beauty of Joseon", 
+      name: "Glow Serum: Propolis + Niacinamide", 
+      price: 17.00,
+      step: 3,
+      volume: "30ml",
+      skinTypes: ["Dull", "Dry"],
+      imageUrl: "https://via.placeholder.com/200",
+      discount: 10,
+      variant: "cart",
+      isWishlisted: true,
+      type: "bestseller",
+      dismissible: false,
+    },
+    { 
+      id: 6,
+      brand: "SKIN1004", 
+      name: "Madagascar Centella Soothing Cream", 
+      price: 24.00,
+      step: 4,
+      volume: "75ml",
+      skinTypes: ["Sensitive", "Acne-Prone"],
+      imageUrl: "https://via.placeholder.com/200",
+      discount: 0,
+      variant: "buy-now",
+      size: "large",
+      type: "shipping-restricted",
+      countryCode: "US",
+      dismissible: true,
     },
   ];
   
@@ -94,6 +134,10 @@ function SkincareRoutine() {
             stockCount={product.stockCount}
             stockStatus={product.stockStatus}
             isWishlisted={product.isWishlisted}
+            type={product.type}
+            dismissible={product.dismissible}
+            countryCode={product.countryCode}
+            expiresAt={product.expiresAt}
           />
         ))}
       </div>
