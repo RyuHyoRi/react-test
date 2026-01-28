@@ -45,12 +45,16 @@ function AdvancedQuantitySelector({
         setOptionsValuesChanged(prev => !prev);
     };
 
-    useEffect(() => {
+    const getInitialOptions = () => {
         const initialOptions = {};
         options.forEach(option => {
             initialOptions[option.type] = option.values[0];
         });
-        setSelectedOptions(initialOptions);
+        return initialOptions;
+    };
+
+    useEffect(() => {
+        setSelectedOptions(getInitialOptions());
     }, [options]);
 
     useEffect(() => {
@@ -65,7 +69,11 @@ function AdvancedQuantitySelector({
                 return (
             <div key={option.type}>
                 <label htmlFor={optionId}>{option.type} : </label>
-                <select id={optionId} onChange={handleOptionChange(option.type)}>
+                <select
+                    id={optionId}
+                    value={selectedOptions[option.type] ?? option.values[0]}
+                    onChange={handleOptionChange(option.type)}
+                >
                     {option.values.map(optionValue =>
                         <option key={optionValue} value={optionValue}>
                             {optionValue}
@@ -108,12 +116,14 @@ function AdvancedQuantitySelector({
                     <span>${totalPrice.toFixed(2)}</span>
                 </div>
             </div>
-            <div>⚠️ Only {maxStock} items available</div>
             <button
-                onClick={() => onAddToCart({ quantity, selectedOptions })}
+                onClick={() => {
+                    onAddToCart({ quantity, selectedOptions });
+                }}
             >
                 Add to Cart
             </button>
+            <div>⚠️ Only {maxStock} items available</div>
         </div>
     );
 }

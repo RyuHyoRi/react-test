@@ -6,9 +6,41 @@ function KBeautyCart() {
   const [selectedSamples, setSelectedSamples] = useState([]);
   
   const products = [
-    { id: 1, sku: "CX-SNL-100", brand: "COSRX", name: "Snail Mucin Essence", price: 25.00, stock: 50 },
-    { id: 2, sku: "BOJ-GLW-30", brand: "Beauty of Joseon", name: "Glow Serum", price: 17.00, stock: 30 },
-    { id: 3, sku: "SK4-CEN-75", brand: "SKIN1004", name: "Centella Cream", price: 24.00, stock: 15 },
+    { 
+      id: 1, 
+      sku: "CX-SNL-100", 
+      brand: "COSRX", 
+      name: "Snail Mucin Essence", 
+      price: 25.00, 
+      stock: 50,
+      options: [
+        { type: "size", values: ["50ml", "100ml", "200ml"] },
+        { type: "shade", values: ["Original", "Light"] }
+      ]
+    },
+    { 
+      id: 2, 
+      sku: "BOJ-GLW-30", 
+      brand: "Beauty of Joseon", 
+      name: "Glow Serum", 
+      price: 17.00, 
+      stock: 30,
+      options: [
+        { type: "size", values: ["100ml", "200ml"] },
+        { type: "shade", values: ["glow", "matte"] }
+      ]
+    },
+    { 
+      id: 3, 
+      sku: "SK4-CEN-75", 
+      brand: "SKIN1004", 
+      name: "Centella Cream", 
+      price: 24.00, stock: 15,
+      options: [
+        { type: "size", values: ["75ml", "150ml"] },
+        { type: "shade", values: ["soft", "medium", "bold"] }
+      ]
+    }
   ];
   
   const freeSamples = [
@@ -145,19 +177,11 @@ function KBeautyCart() {
               productName={product.name}
               unitPrice={product.price}
               maxStock={product.stock}
-              options={[
-                { type: "size", values: ["50ml", "100ml", "200ml"] },
-                { type: "shade", values: ["Original", "Light"] }
-              ]}
+              options={product.options}
               onAddToCart={({ quantity, selectedOptions }) =>
                 addToCart(product, quantity, selectedOptions)
               }
             />
-            <span className="price">${product.price.toFixed(2)}</span>
-            <span className="stock">{product.stock} in stock</span>
-            <button onClick={() => addToCart(product, 1, {})}>
-              Add to Cart
-            </button>
           </div>
         ))}
       </section>
@@ -171,9 +195,16 @@ function KBeautyCart() {
           <>
             {cart.map(item => (
               <div key={item.id} className="cart-item">
-                <div className="item-info">
-                  <span className="brand">{item.brand}</span>
-                  <span className="name">{item.name}</span>
+                <div className="item-details">
+                  <div className="item-info">
+                    <span className="brand">{item.brand}</span>
+                    <span className="name">{item.name}</span>
+                  </div>
+                  <div className="item-options">
+                    {Object.entries(item.selectedOptions).map(([optionType, optionValue]) => (
+                      <span key={optionType}>{optionType}: {optionValue}</span>
+                    ))}
+                  </div>
                 </div>
                 <div className="quantity-controls">
                   <button onClick={() => updateQuantity(item.id, item.optionsKey, item.quantity - 1)}>−</button>
