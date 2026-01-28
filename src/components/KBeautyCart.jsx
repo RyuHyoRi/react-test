@@ -13,6 +13,7 @@ function KBeautyCart() {
       name: "Snail Mucin Essence", 
       price: 25.00, 
       stock: 50,
+      maxStock: 20,
       options: [
         { type: "size", values: ["50ml", "100ml", "200ml"] },
         { type: "shade", values: ["Original", "Light"] }
@@ -25,6 +26,7 @@ function KBeautyCart() {
       name: "Glow Serum", 
       price: 17.00, 
       stock: 30,
+      maxStock: 10,
       options: [
         { type: "size", values: ["100ml", "200ml"] },
         { type: "shade", values: ["glow", "matte"] }
@@ -35,7 +37,9 @@ function KBeautyCart() {
       sku: "SK4-CEN-75", 
       brand: "SKIN1004", 
       name: "Centella Cream", 
-      price: 24.00, stock: 15,
+      price: 24.00, 
+      stock: 15,
+      maxStock: 5,
       options: [
         { type: "size", values: ["75ml", "150ml"] },
         { type: "shade", values: ["soft", "medium", "bold"] }
@@ -176,7 +180,7 @@ function KBeautyCart() {
             <AdvancedQuantitySelector
               productName={product.name}
               unitPrice={product.price}
-              maxStock={product.stock}
+              maxStock={product.maxStock}
               options={product.options}
               onAddToCart={({ quantity, selectedOptions }) =>
                 addToCart(product, quantity, selectedOptions)
