@@ -1,0 +1,122 @@
+.order-dashboard-page {
+    background-color: #525252;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    width: 900px;
+    margin: 0 auto;
+}
+
+.order-dashboard-page h1 {
+    font-size: 26px;
+}
+
+.order-dashboard-card {
+    background-color: #333333;
+    padding: 20px;
+    border-radius: 10px;
+    width: calc(50% - 10px);
+    box-sizing: border-box;
+
+}
+
+.order-dashboard-card-header, .card-info, .card-details-tab {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.card-details-tab-button {
+    padding: 3px 5px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.card-details-content {
+    background-color: #444444;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2) inset;
+}
+
+.item-row {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.item-col {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: 7px;
+    list-style: circle;
+}
+
+.order-tracking-number {
+    text-align: left;
+}
+
+.filter-options {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+}
+
+.filter-options li {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #444444;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-options li:hover {
+    outline: auto;
+}
+
+.filter-options li.active {
+    background-color: #c45959;
+}
+
+.search-options {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+.search-options input {
+    width: 55%;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #444444;
+    color: #ffffff;
+    font-size: 14px;
+    outline: none;
+}
+
+.search-options select {
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #444444;
+    color: #ffffff;
+    font-size: 14px;
+    outline: none;
+}
+
+.order-dashboard-cards {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+}
+
+.order-summary {
+    margin-top: 20px;
+}

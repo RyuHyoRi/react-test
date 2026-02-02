@@ -45,6 +45,7 @@ function AdvancedQuantitySelector({
         setOptionsValuesChanged(prev => !prev);
     };
 
+    // 초기 옵션 설정
     const getInitialOptions = () => {
         const initialOptions = {};
         options.forEach(option => {
