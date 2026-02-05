@@ -1,0 +1,129 @@
+.global-checkout-form {
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #333333;
+    padding: 20px;
+    border-radius: 10px;
+    width: auto;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.global-checkout-form h1 {
+    font-size: 26px;
+}
+
+.global-checkout-form label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.global-checkout-form input {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #444444;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.global-checkout-form select {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #444444;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.global-checkout-form input[type="radio"], .global-checkout-form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.global-checkout-form [class$="field"] {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.global-checkout-form [class*="group"] {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+}
+
+.country-group, .email-group, .phone-group, .shipping-method-group, .shipping-method-options, .billing-address-group {
+    padding: 10px 0;
+}
+
+.global-checkout-form .total-list {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.global-checkout-form .total-list li {
+    padding: 7px 0;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.global-checkout-form .total-list li:first-child {
+    border-top: 1px solid #ffffff;
+}
+.global-checkout-form .total-list li:last-child {
+    border-top: 1px solid #ffffff;
+}
+
+.global-checkout-form .total-list li span:first-child {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.global-checkout-form .continue-to-payment-btn {
+    max-width: 350px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.shipping-method-options span:last-child {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.billing-address-group {
+    padding: 15px 0;
+}
+
+.phone-group input {
+    width: 70px;
+}
+
+.email-group .field-error {
+    color: #e95d5d;
+    font-size: 12px;
+    position: absolute;
+    top: 35px;
+}
+
+.address-input-group .field-error {
+    color: #e95d5d;
+    font-size: 12px;
+    position: absolute;
+    top: 27px;
+}
+
+.phone-group .field-error {
+    color: #e95d5d;
+    font-size: 12px;
+    position: absolute;
+    top: 36px;
+}

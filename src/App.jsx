@@ -3,6 +3,7 @@ import Home from "./pages/Home.jsx";
 import Skincare from "./pages/Skincare.jsx";
 import Cart from "./pages/Cart.jsx";
 import OrderDashboard from "./pages/OrderDashboard.jsx";
+import GlobalCheckout from "./pages/GlobalCheckout.jsx";
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
       <Route path="/skincare" element={<Skincare />} />
       <Route path="/cart" element={<Cart />} />
       <Route path="/orders" element={<OrderDashboard />} />
+      <Route path="/checkout" element={<GlobalCheckout />} />
     </Routes>
   );
 }

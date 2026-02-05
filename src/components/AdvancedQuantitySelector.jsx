@@ -83,7 +83,7 @@ function AdvancedQuantitySelector({
                 </select>
             </div>
             )})}
-            <div className="quantity-controls">
+            <div className="cart-quantity-controls">
                 <label htmlFor="quantity-input">Quantity: </label>
                 <button onClick={() => setQuantity(Math.max(1, quantity - 1))}>-</button>
                 <input

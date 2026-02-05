@@ -43,7 +43,7 @@ function SkincareProductCard({
       
       <img src={imageUrl} alt={name} />
       
-      <div className="product-info">
+      <div className="skincare-product-info">
         <span className="brand">{brand}</span>
         <h3 className="name">{name}</h3>
         <span className="volume">{volume}</span>

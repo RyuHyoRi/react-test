@@ -28,7 +28,7 @@
 
 }
 
-.product-info {
+.cart-product-info {
     display: flex;
     flex-flow: column nowrap;
     gap: 5px;
@@ -46,7 +46,7 @@
     align-items: center;
 }
 
-.quantity-controls {
+.cart-quantity-controls {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;

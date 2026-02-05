@@ -172,7 +172,7 @@ function KBeautyCart() {
         <h2>Shop K-Beauty</h2>
         {products.map(product => (
           <div key={product.id} className="product-item">
-            <div className="product-info">
+            <div className="cart-product-info">
               <span className="brand">{product.brand}</span>
               <span className="name">{product.name}</span>
               <span className="sku">SKU: {product.sku}</span>
