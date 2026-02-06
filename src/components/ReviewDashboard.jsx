@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from "react";
 import "./ReviewDashboard.css";
 
+
 const STAR_FILTERS = ["all", 5, 4, 3, 2, 1];
 const SKIN_FILTERS = ["all", "Oily", "Dry", "Combination", "Sensitive", "Normal"];
 
@@ -129,7 +130,7 @@ export default function ReviewDashboard({ reviews = [] }) {
         return list;
     }, [
         reviews,
-        starFilter,
+        starFilter, 
         skinFilter,
         verifiedOnly,
         withPhotosOnly,
