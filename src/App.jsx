@@ -4,6 +4,7 @@ import Skincare from "./pages/Skincare.jsx";
 import Cart from "./pages/Cart.jsx";
 import OrderDashboard from "./pages/OrderDashboard.jsx";
 import GlobalCheckout from "./pages/GlobalCheckout.jsx";
+import SkincareRoutine from "./pages/SkincareRoutine.jsx";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
       <Route path="/cart" element={<Cart />} />
       <Route path="/orders" element={<OrderDashboard />} />
       <Route path="/checkout" element={<GlobalCheckout />} />
+      <Route path="/routine" element={<SkincareRoutine />} />
     </Routes>
   );
 }
