@@ -277,3 +277,20 @@
   font-size: 13px;
   line-height: 1.5;
 }
+
+.faq-shell summary {
+    list-style: none;
+}
+.faq-shell summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-shell details .keda-open {
+    display: none;
+}
+.faq-shell details[open] .keda-open {
+    display: inline;
+}
+.faq-shell details[open] .keda-closed {
+    display: none;
+}

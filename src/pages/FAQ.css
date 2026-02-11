@@ -1,0 +1,321 @@
+.faq-shell {
+    background: #3f3f3f;
+    border-radius: 10px;
+    color: #e7ecf6;
+    padding: 24px;
+    width: 700px;
+}
+
+.faq-shell .livo-karo {
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+.faq-shell .muto-sari {
+    display: flex;
+    gap: 18px;
+    flex-direction: column;
+    padding: 18px;
+    border: 1px solid #4f4f4f;
+    background: #4f4f4f;
+    border-radius: 16px;
+}
+
+.faq-shell .neso-rina {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.faq-shell .peko-lamo {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    display: grid;
+    place-items: center;
+    border: 1px solid #4f4f4f;
+}
+
+.faq-shell .zuri-nexo {
+    margin: 0;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    text-align: left;
+}
+
+.faq-shell .fira-luno {
+    margin: 6px 0 0;
+    color: #a7b0c2;
+    font-size: 13px;
+    }
+
+.faq-shell .gavo-tira {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.faq-shell .suto-mare {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 220px;
+}
+
+.faq-shell .kira-suto {
+    flex: 1;
+    min-width: 260px;
+}
+
+.faq-shell .lume-kada {
+    font-size: 12px;
+    color: #a7b0c2;
+}
+
+.faq-shell .boro-nemi,
+.faq-shell .nami-boro {
+    height: 40px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: #4f4f4f;
+    color: #e7ecf6;
+    padding: 0 12px;
+    outline: none;
+}
+
+.faq-shell .nami-boro::placeholder {
+    color: rgba(167, 176, 194, 0.65);
+}
+
+.faq-shell .veko-sapa {
+    display: flex;
+    gap: 10px;
+    margin: 16px 0 10px;
+    flex-wrap: wrap;
+}
+
+.faq-shell .sapa-veko {
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.02);
+    color: #e7ecf6;
+    padding: 10px 12px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: transform 120ms ease, background 120ms ease, border-color 120ms ease;
+}
+
+.faq-shell .sapa-veko:hover {
+    transform: translateY(-1px);
+    border-color: rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.faq-shell .veko-kita {
+    background: rgb(130, 101, 247);
+    border-color: rgb(125, 92, 247);
+}
+
+.faq-shell .rali-ponu {
+    margin-top: 10px;
+}
+
+.faq-shell .ponu-rali {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 10px;
+}
+
+.faq-shell .kedo-suni {
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.faq-shell .suni-kedo {
+    border-color: #4f4f4f;
+    background: #4f4f4f;
+}
+
+.faq-shell .rimo-keda {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 22px 1fr auto;
+    gap: 10px;
+    align-items: center;
+    background: transparent;
+    border: none;
+    padding: 14px 14px;
+    color: #e7ecf6;
+    cursor: pointer;
+    text-align: left;
+}
+
+.faq-shell .keda-rimo {
+    color: #a7b0c2;
+    font-size: 12px;
+}
+
+.faq-shell .foka-siru {
+    font-size: 14px;
+    line-height: 1.35;
+}
+
+.faq-shell .siru-foka {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.faq-shell .tami-rusu {
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: #0b2355;
+    color: #ececec;
+}
+
+.faq-shell .rusu-tami {
+    color: #cccccc;
+}
+
+.faq-shell .nopi-lare {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 14px 14px 16px;
+}
+
+.faq-shell .lare-nopi {
+    display: grid;
+    gap: 12px;
+}
+
+.faq-shell .pami-sote {
+    margin: 0;
+    color: rgba(231, 236, 246, 0.92);
+    line-height: 1.55;
+}
+
+.faq-shell .vati-nuku {
+    border: 1px solid #4f4f4f;
+    background: #4f4f4f;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.faq-shell .nuku-vati {
+    font-size: 12px;
+    color: rgba(45, 212, 191, 0.95);
+    margin-bottom: 6px;
+}
+
+.faq-shell .vati-kune {
+    color: rgba(231, 236, 246, 0.92);
+    line-height: 1.5;
+}
+
+.faq-shell .devo-rako {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.faq-shell .rako-devo {
+    color: rgba(175, 155, 255, 0.95);
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.faq-shell .huro-mena {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 4px;
+}
+
+.faq-shell .mena-huro {
+    font-size: 12px;
+    color: #a7b0c2;
+}
+
+.faq-shell .yaso-tigi {
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: #3f3f3f;
+    color: #e7ecf6;
+    border-radius: 999px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: transform 120ms ease, border-color 120ms ease, background 120ms ease;
+}
+
+.faq-shell .tigi-yaso {
+    border-color: rgba(124, 92, 255, 0.55);
+    background: rgba(124, 92, 255, 0.14);
+}
+
+.faq-shell .roki-sena {
+    border-top: 1px dashed rgba(255, 255, 255, 0.08);
+    padding-top: 12px;
+}
+
+.faq-shell .sena-roki {
+    font-size: 12px;
+    color: #a7b0c2;
+    margin-bottom: 8px;
+}
+
+.faq-shell .kuvo-rilo {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 6px;
+}
+
+.faq-shell .bixa-nori {
+    width: 100%;
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.02);
+    color: rgba(231, 236, 246, 0.95);
+    border-radius: 12px;
+    padding: 10px 12px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.faq-shell .bixa-nori:hover {
+    border-color: rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.faq-shell .sagi-mero {
+    background: rgba(255, 196, 0, 0.18);
+    color: #e7ecf6;
+    padding: 0 2px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 196, 0, 0.18);
+}
+
+.faq-shell .vuno-pali {
+    border: 1px dashed rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    padding: 22px;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.faq-shell .pali-vuno {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.faq-shell .vuno-sari {
+    color: #a7b0c2;
+    font-size: 13px;
+    line-height: 1.5;
+}
