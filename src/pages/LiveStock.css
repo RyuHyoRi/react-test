@@ -1,0 +1,105 @@
+.live-stock-indicator {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: #4d4d4d;
+    width: 420px;
+    height: 300px;
+    position: relative;
+}
+
+.live-stock-indicator-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.live-stock-out-of-stock-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.live-stock-out-of-stock {
+    font-size: 16px;
+    font-weight: bold;
+    color: #aaaaaa;
+}
+
+.live-stock-notify-me-btn {
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #85c285;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.live-stock-only-left {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff4848;
+    animation: blink 0.5s step-end infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.live-stock-low-stock {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fd943e;
+}
+
+.live-stock-in-stock {
+    font-size: 16px;
+    font-weight: bold;
+    color: #48ff48;
+}
+
+.live-stock-add-to-cart-btn {
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #85c285;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.live-stock-add-to-cart-btn-disabled {
+    background-color: #444444;
+    color: #ffffff;
+    cursor: not-allowed;
+}
+
+.live-stock-pulse {
+    display: inline-block;
+    animation: liveStockPulse 220ms ease-out;
+}
+
+@keyframes liveStockPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .live-stock-pulse {
+        animation: none;
+    }
+}

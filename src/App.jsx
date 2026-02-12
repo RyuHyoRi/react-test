@@ -6,6 +6,7 @@ import OrderDashboard from "./pages/OrderDashboard.jsx";
 import GlobalCheckout from "./pages/GlobalCheckout.jsx";
 import SkincareRoutine from "./pages/SkincareRoutine.jsx";
 import FAQ from "./pages/FAQ.jsx";
+import LiveStock from "./pages/LiveStock.jsx";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
       <Route path="/checkout" element={<GlobalCheckout />} />
       <Route path="/routine" element={<SkincareRoutine />} />
       <Route path="/faq" element={<FAQ />} />
+      <Route path="/livestock" element={<LiveStock />} />
     </Routes>
   );
 }
